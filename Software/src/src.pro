@@ -163,6 +163,7 @@ SOURCES += \
     LedDeviceAdalight.cpp \
     LedDeviceArdulight.cpp \
     LedDeviceVirtual.cpp \
+    LedDeviceWS2812.cpp \
     ColorButton.cpp \
     ApiServer.cpp \
     ApiServerSetColorTask.cpp \
@@ -208,6 +209,7 @@ HEADERS += \
     LedDeviceAdalight.hpp \
     LedDeviceArdulight.hpp \
     LedDeviceVirtual.hpp \
+    LedDeviceWS2812.hpp \
     ColorButton.hpp \
     ../common/defs.h \
     enums.hpp         ApiServer.hpp     ApiServerSetColorTask.hpp \

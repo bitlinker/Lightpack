@@ -36,6 +36,7 @@
 #include "LedDeviceAdalight.hpp"
 #include "LedDeviceArdulight.hpp"
 #include "LedDeviceVirtual.hpp"
+#include "LedDeviceWS2812.hpp"
 #include "Settings.hpp"
 
 using namespace SettingsScope;
@@ -390,6 +391,10 @@ AbstractLedDevice * LedDeviceManager::createLedDevice(SupportedDevices::DeviceTy
     case SupportedDevices::DeviceTypeVirtual:
         DEBUG_LOW_LEVEL << Q_FUNC_INFO << "SupportedDevices::VirtualDevice";
         return (AbstractLedDevice *)new LedDeviceVirtual();
+
+case SupportedDevices::DeviceTypeWS2812:
+        DEBUG_LOW_LEVEL << Q_FUNC_INFO << "SupportedDevices::WS2812";
+        return (AbstractLedDevice *)new LedDeviceWS2812(/*Settings::getWS2812SerialPortName(), Settings::getWS2812SerialPortBaudRate()*/);
 
     default:
         break;

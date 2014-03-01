@@ -83,6 +83,7 @@ enum DeviceType {
     DeviceTypeAdalight,
     DeviceTypeVirtual,
     DeviceTypeArdulight,
+    DeviceTypeWS2812,
 
     DeviceTypesCount,
     DefaultDeviceType = DeviceTypeLightpack
